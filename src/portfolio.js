@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Shash",
-  title: "Hi all, I'm Shash",
+  title: "Welcome",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "Versatile Engineer with 4+ years of experience in Software Engineering (Java, Javascript, SQL, Git, Azure, Jira etc), Technical Sales, and Product Development. Holds an Engineering degree in Computer Science and a Master's in Strategy & Innovation from a leading European business school. Passionate about solving problems & exploring new ideas, with coursework in Corporate Strategy & Transformation      and Open Innovation. Experienced in developing & integrating products for Fortune 500 companies, collaborating with and leading global teams (Europe, Asia, and USA) on both on-prem and cloud technologies. Adept at bridging technical solutions and business needs, leveraging full-stack development skills and a dynamic background."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,30 +33,22 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
-  // Instagram, Twitter and Kaggle are also supported in the links!
-  // To customize icons and social links, tweak src/components/SocialMedia
+  linkedin: "https://www.linkedin.com/in/shashwat-sahani/",
   display: true // Set true to display this section, defaults to false
 };
 
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What do I do?",
+  subTitle: "Almost everything - Engineering, Development, Management, Ownership",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Development"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Engineering"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Management and Ownership"
     )
   ],
 
@@ -385,23 +377,31 @@ const twitterDetails = {
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
-export {
+// export {
+//   illustration,
+//   greeting,
+//   socialMediaLinks,
+//   splashScreen,
+//   skillsSection,
+//   educationInfo,
+//   techStack,
+//   workExperiences,
+//   openSource,
+//   bigProjects,
+//   achievementSection,
+//   blogSection,
+//   talkSection,
+//   podcastSection,
+//   contactInfo,
+//   twitterDetails,
+//   isHireable,
+//   resumeSection
+// };
+
+export{
   illustration,
-  greeting,
-  socialMediaLinks,
-  splashScreen,
-  skillsSection,
-  educationInfo,
-  techStack,
-  workExperiences,
-  openSource,
-  bigProjects,
-  achievementSection,
-  blogSection,
-  talkSection,
-  podcastSection,
-  contactInfo,
-  twitterDetails,
-  isHireable,
-  resumeSection
-};
+    greeting,
+    socialMediaLinks,
+    splashScreen,
+    skillsSection
+}
