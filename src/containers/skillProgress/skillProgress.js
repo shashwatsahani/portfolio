@@ -3,7 +3,6 @@ import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
 import laptopMan from "../../assets/lottie/laptopMan";
-import hacker from "../../assets/lottie/hacker";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
@@ -30,7 +29,7 @@ export default function StackProgress() {
 
           <div className="skills-image">
             {illustration.animated ? (
-              <DisplayLottie animationData={hacker} />
+              <DisplayLottie animationData={laptopMan} />
             ) : (
               <img
                 alt="Skills"
