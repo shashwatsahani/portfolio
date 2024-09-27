@@ -10,12 +10,16 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+ // margin-top: -15px;
 }
 
 .greeting-main {
   display: flex;
 }
+
+// h1.greeting-text {
+//   margin-top: -4px;
+// }
 
 .subTitle {
   color: $subTitle !important;
@@ -119,4 +123,12 @@
   .main {
     width: auto;
   }
+}
+h1.greeting-text {
+  margin-top: 9px;
+  font-family: monospace;
+}
+
+p.greeting-text-p.subTitle{
+  font-family: monospace;
 }

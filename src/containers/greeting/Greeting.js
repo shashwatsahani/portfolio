@@ -2,7 +2,7 @@ import React, {useContext} from "react";
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
-import landingPerson from "../../assets/lottie/landingPerson";
+import Space from "../../assets/lottie/Space";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -36,24 +36,12 @@ export default function Greeting() {
               >
                 {greeting.subTitle}
               </p>
-              <SocialMedia />
-              <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
-                  <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
-                  </a>
-                )}
-              </div>
+              
             </div>
           </div>
           <div className="greeting-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
+              <DisplayLottie animationData={Space} />
             ) : (
               <img
                 alt="man sitting on table"

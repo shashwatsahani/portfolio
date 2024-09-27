@@ -2,7 +2,8 @@ import React from "react";
 import "./Progress.scss";
 import {illustration, techStack} from "../../portfolio";
 import {Fade} from "react-reveal";
-import Build from "../../assets/lottie/build";
+import laptopMan from "../../assets/lottie/laptopMan";
+import hacker from "../../assets/lottie/hacker";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
 export default function StackProgress() {
@@ -29,7 +30,7 @@ export default function StackProgress() {
 
           <div className="skills-image">
             {illustration.animated ? (
-              <DisplayLottie animationData={Build} />
+              <DisplayLottie animationData={hacker} />
             ) : (
               <img
                 alt="Skills"

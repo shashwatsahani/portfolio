@@ -43,19 +43,22 @@ function Header() {
         <ul className={isDark ? "dark-menu menu" : "menu"}>
           {viewSkills && (
             <li>
-              <a href="#skills">Skills</a>
+               {/*<a href="#skills">Skills</a>*/}
+               <a className="btn-16" href="#skills"><span>Skills</span></a>
+              {/*<div class="btn-16" href="#skills"><span>Skills</span></div>*/}
             </li>
           )}
           {viewExperience && (
             <li>
-              <a href="#experience">Work Experiences</a>
+              {/*<a href="#experience">Work Experiences</a>*/}
+              <a className="btn-55" href="#experience"><span>Experience</span></a>
             </li>
           )}
-          {viewOpenSource && (
+          {/* {viewOpenSource && (
             <li>
               <a href="#opensource">Open Source</a>
             </li>
-          )}
+          )} */}
           {viewAchievement && (
             <li>
               <a href="#achievements">Achievements</a>
@@ -73,11 +76,13 @@ function Header() {
           )}
           {viewResume && (
             <li>
-              <a href="#resume">Resume</a>
+             {/* <a href="#resume">Resume</a>*/}
+              <a className="btn-55" href="#contact"><span>Linkedin</span></a>
             </li>
           )}
           <li>
-            <a href="#contact">Contact Me</a>
+           {/* <a href="#contact">Contact Me</a>*/}
+            <a className="btn-16" href="#contact"><span>Contact Me</span></a>
           </li>
           <li>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}

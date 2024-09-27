@@ -3,13 +3,13 @@
 // To change portfolio colors globally go to the  _globalColor.scss file
 
 import emoji from "react-easy-emoji";
-import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
+import gradient from "./assets/lottie/gradient"; // Rename to your file name for custom animation
 
 // Splash Screen
 
 const splashScreen = {
   enabled: true, // set false to disable splash screen
-  animation: splashAnimation,
+  animation: gradient,
   duration: 2000 // Set animation duration as per your animation
 };
 
@@ -23,10 +23,10 @@ const greeting = {
   username: "Shash",
   title: "Welcome",
   subTitle: emoji(
-    "Versatile Engineer with 4+ years of experience in Software Engineering (Java, Javascript, SQL, Git, Azure, Jira etc), Technical Sales, and Product Development. Holds an Engineering degree in Computer Science and a Master's in Strategy & Innovation from a leading European business school. Passionate about solving problems & exploring new ideas, with coursework in Corporate Strategy & Transformation      and Open Innovation. Experienced in developing & integrating products for Fortune 500 companies, collaborating with and leading global teams (Europe, Asia, and USA) on both on-prem and cloud technologies. Adept at bridging technical solutions and business needs, leveraging full-stack development skills and a dynamic background."
+    "Versatile Engineer with 4+ years of experience in Software Engineering (Java, Javascript, SQL, Git, Azure, Jira etc) and Product Development(Management, Sales and Ownership). Holds an Engineering degree in Computer Science and a Master's in Strategy & Innovation from a leading European business school. Passionate about solving problems & exploring new ideas, with coursework in Corporate Strategy & Transformation      and Open Innovation. Experienced in developing & integrating products for Fortune 500 companies, collaborating with and leading global teams (Europe, Asia, and USA) on both on-prem and cloud technologies. Adept at bridging technical solutions and business needs, leveraging full-stack development skills and a dynamic background."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofF", // Set to empty to hide the button
+    "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -41,15 +41,13 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What do I do?",
-  subTitle: "Almost everything - Engineering, Development, Management, Ownership",
+  subTitle: "Engineering, Development, Management & Ownership ⚡",
   skills: [
     emoji(
-      "⚡ Development"
+      ""
     ),
-    emoji("⚡ Engineering"),
-    emoji(
-      "⚡ Management and Ownership"
-    )
+    emoji(""),
+    emoji("")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -73,40 +71,72 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "jQuery",
+      fontAwesomeClassname: "fas fa-scroll"
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "Php",
+      fontAwesomeClassname: "fab fa-php"
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
+      skillName: "SQL",
       fontAwesomeClassname: "fas fa-database"
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "Microsoft Azure",
+      fontAwesomeClassname: "fab fa-cloudflare"
+    },
+    {
+      skillName: "Nodejs",
+      fontAwesomeClassname: "fab fa-node"
     },
     {
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
     {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      skillName: "Github",
+      fontAwesomeClassname: "fab fa-github"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName: "Bitbucket (Git)",
+      fontAwesomeClassname: "fab fa-bitbucket"
+    },
+    {
+      skillName: "DBVisualizer",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Jira",
+      fontAwesomeClassname: "fab fa-jira"
+    },
+    {
+      skillName: "Linux",
+      fontAwesomeClassname: "fab fa-linux"
+    },
+    {
+      skillName: "Microsoft Office",
+      fontAwesomeClassname: "fas fa-file-word"
+    },
+    {
+      skillName: "Microsoft Excel VBA",
+      fontAwesomeClassname: "fas fa-file-excel"
+    },
+    {
+      skillName: "Confluence",
+      fontAwesomeClassname: "fab fa-confluence"
+    },
+    {
+      skillName: "Jenkins",
+      fontAwesomeClassname: "fas fa-cogs"
+    },
+    {
+      skillName: "Selenium",
+      fontAwesomeClassname: "fas fa-robot"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -145,15 +175,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Full Stack Development (Frontend + Backend)", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "Project Management & Technical Sales",
+      progressPercentage: "75%"
     },
     {
-      Stack: "Programming",
+      Stack: "Product Management & Ownership",
       progressPercentage: "60%"
     }
   ],
@@ -162,47 +192,37 @@ const techStack = {
 
 // Work experience section
 
-const workExperiences ={};
-
-// const workExperiences = {
-//   display: true, //Set it to true to show workExperiences Section
-//   experience: [
-//     {
-//       role: "Data & AI Team",
-//       company: "EDP Group",
-//       companylogo: require("./assets/images/facebookLogo.png"),
-//       date: "June 2018 – Present",
-//       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//       descBullets: [
-//         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-//         "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-//       ]
-//     },
-//     {
-//       role: "Front-End Developer",
-//       company: "Quora",
-//       companylogo: require("./assets/images/quoraLogo.png"),
-//       date: "May 2017 – May 2018",
-//       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-//     },
-//     {
-//       role: "Software Engineer Intern",
-//       company: "Airbnb",
-//       companylogo: require("./assets/images/airbnbLogo.png"),
-//       date: "Jan 2015 – Sep 2015",
-//       desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-//     }
-//   ]
-// };
-
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
-
-const openSource = {
-  showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
+const workExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Data & AI Team | Strategy & Architecture",
+      company: "EDP Group",
+      companylogo: require("./assets/images/EDPgr.png"),
+      date: "April 2023 – Present",
+      desc: "Leading Data, AI & Cloud Projects",
+      descBullets: []
+    },
+    {
+      role: "Full Stack Developer",
+      company: "Informatica",
+      companylogo: require("./assets/images/inform.png"),
+      date: "July 2019 – May 2022",
+      desc: "Drove the Integration of Informatica's fastest growing products - Axon & Enterprise Data Catalog"
+    }
+  ]
 };
 
+
+
+// const openSource = {
+//   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
+//   display: true // Set false to hide this section, defaults to true
+// };
+
+const openSource = {
+
+};
 // Some big projects you have worked on
 const bigProjects = {};
 
@@ -367,12 +387,16 @@ const resumeSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
+
+// const contactInfo = {
+  
+// };
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Want to talk or have a question? Feel free to send me an email or message on linkedin.",
   number: "",
-  email_address: ""
+  email_address: "shashwatsahani@gmail.com"
 };
 
 // Twitter Section
